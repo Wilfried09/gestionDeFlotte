@@ -20,6 +20,7 @@ afa353,127.0.0.1,GET,http://www.symfony-project.fr/,1545227854,,200
 fb5a23,127.0.0.1,GET,http://www.symfony-project.fr/,1545228280,,200
 156727,127.0.0.1,GET,http://www.symfony-project.fr/,1545228474,,200
 d49cc8,127.0.0.1,GET,http://www.symfony-project.fr/,1545230371,,200
+<<<<<<< HEAD
 86c80c,127.0.0.1,GET,http://www.symfony-project.fr/,1545230696,,200
 1f2641,127.0.0.1,GET,http://www.symfony-project.fr/,1545231468,,200
 5675ee,127.0.0.1,GET,http://www.symfony-project.fr/,1545233912,,200
@@ -70,3 +71,5 @@ c3dfd0,127.0.0.1,GET,http://www.symfony-project.fr/container,1545236663,3c3af9,2
 3c3af9,127.0.0.1,GET,http://www.symfony-project.fr/container,1545236663,,500
 097322,127.0.0.1,GET,http://www.symfony-project.fr/container,1545236881,08fb4b,200
 08fb4b,127.0.0.1,GET,http://www.symfony-project.fr/container,1545236881,,500
+=======
+>>>>>>> bf81d60aeabe2054419241afe887874e5d997734

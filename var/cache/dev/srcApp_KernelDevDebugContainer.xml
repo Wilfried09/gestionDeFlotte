@@ -1972,6 +1972,17 @@
         <argument>2048</argument>
       </call>
       <call method="addListener">
+<<<<<<< HEAD
+=======
+        <argument>console.command</argument>
+        <argument type="collection">
+          <argument type="service" id="debug.debug_handlers_listener"/>
+          <argument>configure</argument>
+        </argument>
+        <argument>2048</argument>
+      </call>
+      <call method="addListener">
+>>>>>>> bf81d60aeabe2054419241afe887874e5d997734
         <argument>kernel.request</argument>
         <argument type="collection">
           <argument type="service" id="router_listener"/>

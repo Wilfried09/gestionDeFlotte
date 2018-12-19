@@ -20,7 +20,17 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         $this->defaultLocale = $defaultLocale;
         if (null === self::$declaredRoutes) {
             self::$declaredRoutes = array(
+<<<<<<< HEAD
         'racine' => array(array(), array('_controller' => 'App\\Controller\\HomeController::index'), array(), array(array('text', '/')), array(), array()),
+=======
+        'container' => array(array(), array('_controller' => 'App\\Controller\\ContainerController::container'), array(), array(array('text', '/container')), array(), array()),
+        'containerId' => array(array('id'), array('_controller' => 'App\\Controller\\ContainerController::containerId'), array(), array(array('variable', '/', '[^/]++', 'id', true), array('text', '/container')), array(), array()),
+        'containership' => array(array(), array('_controller' => 'App\\Controller\\ContainershipController::containership'), array(), array(array('text', '/containership')), array(), array()),
+        'containershipId' => array(array('id'), array('_controller' => 'App\\Controller\\ContainershipController::containershipId'), array(), array(array('variable', '/', '[^/]++', 'id', true), array('text', '/containership')), array(), array()),
+        'racine' => array(array(), array('_controller' => 'App\\Controller\\HomeController::index'), array(), array(array('text', '/')), array(), array()),
+        'product' => array(array(), array('_controller' => 'App\\Controller\\ProductController::product'), array(), array(array('text', '/product/')), array(), array()),
+        'productId' => array(array('id'), array('_controller' => 'App\\Controller\\ProductController::productId'), array(), array(array('variable', '/', '[^/]++', 'id', true), array('text', '/product')), array(), array()),
+>>>>>>> bf81d60aeabe2054419241afe887874e5d997734
         '_twig_error_test' => array(array('code', '_format'), array('_controller' => 'twig.controller.preview_error::previewErrorPageAction', '_format' => 'html'), array('code' => '\\d+'), array(array('variable', '.', '[^/]++', '_format', true), array('variable', '/', '\\d+', 'code', true), array('text', '/_error')), array(), array()),
         '_wdt' => array(array('token'), array('_controller' => 'web_profiler.controller.profiler::toolbarAction'), array(), array(array('variable', '/', '[^/]++', 'token', true), array('text', '/_wdt')), array(), array()),
         '_profiler_home' => array(array(), array('_controller' => 'web_profiler.controller.profiler::homeAction'), array(), array(array('text', '/_profiler/')), array(), array()),
@@ -33,12 +43,15 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         '_profiler_router' => array(array('token'), array('_controller' => 'web_profiler.controller.router::panelAction'), array(), array(array('text', '/router'), array('variable', '/', '[^/]++', 'token', true), array('text', '/_profiler')), array(), array()),
         '_profiler_exception' => array(array('token'), array('_controller' => 'web_profiler.controller.exception::showAction'), array(), array(array('text', '/exception'), array('variable', '/', '[^/]++', 'token', true), array('text', '/_profiler')), array(), array()),
         '_profiler_exception_css' => array(array('token'), array('_controller' => 'web_profiler.controller.exception::cssAction'), array(), array(array('text', '/exception.css'), array('variable', '/', '[^/]++', 'token', true), array('text', '/_profiler')), array(), array()),
+<<<<<<< HEAD
         'container_list' => array(array(), array('_controller' => 'App\\Controller\\ContainerController::list'), array(), array(array('text', '/container')), array(), array()),
         'container_view' => array(array('id'), array('_controller' => 'App\\Controller\\ContainerController::view'), array('id' => '\\d+'), array(array('variable', '/', '\\d+', 'id', true), array('text', '/container')), array(), array()),
         'containership_list' => array(array(), array('_controller' => 'App\\Controller\\ContainershipController::list'), array(), array(array('text', '/containership')), array(), array()),
         'containership_view' => array(array('id'), array('_controller' => 'App\\Controller\\ContainershipController::view'), array('id' => '\\d+'), array(array('variable', '/', '\\d+', 'id', true), array('text', '/containership')), array(), array()),
         'product_list' => array(array(), array('_controller' => 'App\\Controller\\ProductController::list'), array(), array(array('text', '/product')), array(), array()),
         'product_view' => array(array('id'), array('_controller' => 'App\\Controller\\ProductController::view'), array('id' => '\\d+'), array(array('variable', '/', '\\d+', 'id', true), array('text', '/product')), array(), array()),
+=======
+>>>>>>> bf81d60aeabe2054419241afe887874e5d997734
     );
         }
     }

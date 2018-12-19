@@ -176,6 +176,7 @@
 [2018-12-19 15:39:31] request.INFO: Matched route "racine". {"route":"racine","route_parameters":{"_route":"racine","_controller":"App\\Controller\\HomeController::index"},"request_uri":"http://www.symfony-project.fr/","method":"GET"} []
 [2018-12-19 15:39:31] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
 [2018-12-19 15:39:31] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"d49cc8"},"request_uri":"http://www.symfony-project.fr/_wdt/d49cc8","method":"GET"} []
+<<<<<<< HEAD
 [2018-12-19 15:44:56] request.INFO: Matched route "racine". {"route":"racine","route_parameters":{"_route":"racine","_controller":"App\\Controller\\HomeController::index"},"request_uri":"http://www.symfony-project.fr/","method":"GET"} []
 [2018-12-19 15:44:56] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
 [2018-12-19 15:44:56] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"86c80c"},"request_uri":"http://www.symfony-project.fr/_wdt/86c80c","method":"GET"} []
@@ -303,3 +304,5 @@
 [2018-12-19 17:28:01] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
 [2018-12-19 17:28:01] request.CRITICAL: Uncaught PHP Exception Twig_Error_Runtime: "Variable "containers" does not exist." at /var/www/symfony_projet/templates/container/list.html.twig line 14 {"exception":"[object] (Twig_Error_Runtime(code: 0): Variable \"containers\" does not exist. at /var/www/symfony_projet/templates/container/list.html.twig:14)"} []
 [2018-12-19 17:28:01] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"08fb4b"},"request_uri":"http://www.symfony-project.fr/_wdt/08fb4b","method":"GET"} []
+=======
+>>>>>>> bf81d60aeabe2054419241afe887874e5d997734

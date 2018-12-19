@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 container_list:
   path: /container
   controller: App\Controller\ContainerController::list
@@ -21,3 +22,8 @@ product_list:
 product_view:
   path: /product/{id<\d+>}
   controller: App\Controller\ProductController::view
+=======
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+>>>>>>> bf81d60aeabe2054419241afe887874e5d997734

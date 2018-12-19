@@ -22,6 +22,7 @@ class Container
     private $id;
 
     /**
+<<<<<<< HEAD
      * @var string|null
      *
      * @ORM\Column(name="color", type="string", length=20, nullable=true, options={"default"="NULL"})
@@ -47,7 +48,6 @@ class Container
      * })
      */
     private $containership;
-
 
     public function getId(): ?int
     {
@@ -89,5 +89,4 @@ class Container
 
         return $this;
     }
-
 }

@@ -22,6 +22,7 @@ class ContainerModel
     private $id;
 
     /**
+<<<<<<< HEAD
      * @var string|null
      *
      * @ORM\Column(name="name", type="string", length=255, nullable=true, options={"default"="NULL"})
@@ -83,7 +84,7 @@ class ContainerModel
         return $this->width;
     }
 
-    public function setWidth(int $width): self
+    public function setWidth(?int $width): self
     {
         $this->width = $width;
 
