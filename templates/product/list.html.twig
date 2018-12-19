@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Renvoie la liste des produits!{% endblock %}
+
+{% block body %}
+<div class="example-wrapper">
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Length</th>
+            <th>Width</th>
+            <th>Height</th>
+        </tr>
+
+        {% for product in products %}
+        <tr>
+            <td>
+                <a target="_blank" href="product/{{ product.id }}">
+                    <span>{{ product.id }}</span>
+                </a>
+            </td>
+            <td>
+                    {{ product.name }}
+            </td>
+            <td>
+                    {{ product.length }}
+            </td>
+            <td>
+                    {{ product.width }}
+            </td>
+            <td>
+                    {{ product.height }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

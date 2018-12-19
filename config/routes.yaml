@@ -1,0 +1,23 @@
+container_list:
+  path: /container
+  controller: App\Controller\ContainerController::list
+
+container_view:
+  path: /container/{id<\d+>}
+  controller: App\Controller\ContainerController::view
+
+containership_list:
+  path: /containership
+  controller: App\Controller\ContainershipController::list
+
+containership_view:
+  path: /containership/{id<\d+>}
+  controller: App\Controller\ContainershipController::view
+
+product_list:
+  path: /product
+  controller: App\Controller\ProductController::list
+
+product_view:
+  path: /product/{id<\d+>}
+  controller: App\Controller\ProductController::view

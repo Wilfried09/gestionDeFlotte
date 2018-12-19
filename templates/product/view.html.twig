@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+        {% block title %} renvoie le detail d’un product !{% endblock %}
+
+        {% block body %}
+<div class="example-wrapper">
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Length</th>
+            <th>Width</th>
+            <th>Height</th>
+        </tr>
+        <tr>
+            <td>
+                <a target="_blank" href="product/{{ product.id }}">
+                    <span>{{ product.id }}</span>
+                </a>
+            </td>
+            <td>
+                {{ product.name }}
+            </td>
+            <td>
+                {{ product.length }}
+            </td>
+            <td>
+                {{ product.width }}
+            </td>
+            <td>
+                {{ product.height }}
+            </td>
+        </tr>
+    </table>
+
+</div>
+{% endblock %}

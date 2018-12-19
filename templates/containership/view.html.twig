@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} renvoie le detail d’un containership !{% endblock %}
+
+{% block body %}
+    <div class="example-wrapper">
+
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr><td>{{ containership.color }}</td></tr>
+            </tbody>
+        </table>
+
+
+    </div>
+{% endblock %}

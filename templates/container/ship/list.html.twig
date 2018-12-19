@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+        {% block title %}Renvoie la liste des conteneurs!{% endblock %}
+
+        {% block body %}
+<div class="example-wrapper">
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Capatain Name</th>
+            <th>Container Limit</th>
+        </tr>
+
+        {% for containership in containerships %}
+        <tr>
+            <td>
+                <a target="_blank" href="containership/{{ containership.id }}">
+                    <span>{{ containership.id }}</span>
+                </a>
+            </td>
+            <td>
+                    {{ containership.name }}
+            </td>
+
+            <td>
+                    {{ containership.captainName }}
+            </td>
+            <td>
+                    {{ containership.containerLimit }}
+            </td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+        {% endblock %}
